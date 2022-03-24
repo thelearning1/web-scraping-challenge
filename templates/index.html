@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Mars</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css">
+    
+</head>
+<body>
+    <div class="container-fluid" style="background-image: url('{{ content.Hemispheres.0.img_url }}'); background-repeat: no-repeat; background-attachment: fixed;background-size: 100% 180%;">
+        <div>
+            <div class="row">
+                <br><br><br><br><br><br><br><br><br><br><br>        
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="containter-fluid">
+            <center>
+                <h1>What's Black and White and Red all Over? It's Mars!</h1>
+                <p class="lead">Why on Earth would we be interested in something not ON Earth?</p>
+                <button type="button" onclick="window.location.href='http://127.0.0.1:5000/scrape'">Find out about Mars!</button>
+            </center>
+        </div>
+    </div>
+    <center>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4>{{ content.News_Headline }}</h4>
+                    <hr>
+                    <p>{{ content.News_Content }}</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="{{ content.Main_Image }}" alt="A Scan of the Surface">
+                </div>
+                <div class="col-md-6">
+                    <h5>Mars Facts</h5>
+                    <hr>
+                    {{ content.Mars_Table|safe}}    
+                </div>
+            </div>
+            <hr>
+            <hr>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src='{{ content.Hemispheres.0.img_url }}' alt="'{{ content.Hemispheres.0.title }}'">
+                        <div class="card-body">
+                          <h5 class="card-title">'{{ content.Hemispheres.0.title }}'</h5>
+                          <a href="{{ content.Hemispheres.0.img_url }}" class="btn btn-primary">Full-size image</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src='{{ content.Hemispheres.1.img_url }}' alt="'{{ content.Hemispheres.1.title }}'">
+                        <div class="card-body">
+                          <h5 class="card-title">'{{ content.Hemispheres.1.title }}'</h5>
+                          <a href="{{ content.Hemispheres.1.img_url }}" class="btn btn-primary">Full-size image</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src='{{ content.Hemispheres.2.img_url }}' alt="'{{ content.Hemispheres.2.title }}'">
+                        <div class="card-body">
+                          <h5 class="card-title">'{{ content.Hemispheres.2.title }}'</h5>
+                          <a href="{{ content.Hemispheres.2.img_url }}" class="btn btn-primary">Full-size image</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src='{{ content.Hemispheres.3.img_url }}' alt="'{{ content.Hemispheres.3.title }}'">
+                        <div class="card-body">
+                          <h5 class="card-title">'{{ content.Hemispheres.3.title }}'</h5>
+                          <a href="{{ content.Hemispheres.3.img_url }}" class="btn btn-primary">Full-size image</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

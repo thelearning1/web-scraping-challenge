@@ -1,0 +1,25 @@
+.button{
+    border: 3px solid rgb(156, 46, 53);
+    color: rgb(156, 46, 53);
+    padding: 15px 32px;
+    text-align: center;
+    background-color: bisque;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:rgb(156, 46, 53);
+    color:bisque
+}
+
+.siteHeader{
+    width: 100%;
+    height: 25%;
+    overflow: hidden;
+}
+
+.siteHeader .siteLogo{
+    margin: -100px;
+}
